@@ -9,7 +9,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"
-        type="text/javascript"></script> 
+        type="text/javascript"></script>
+        <script language="javascript" type="text/javascript">
+            $(document).ready(function() {
+              $('#trigger').click(function(){
+                $("#dialog").dialog();
+              }); 
+            });                  
+          </script> 
     <title>Document</title>
 </head>
 <body>
@@ -64,7 +71,7 @@
             </ul>
         </aside>
     </div>
-    <p id="botup"><i class="fas fa-users"></i> ABOUT US</p>
+    <p id="botup"><i class="fas fa-users"></i> ABOUT US  <a href="#" id="trigger">view file/a></p>
     <p><a id="about"></a></p>
     <p id="bottom">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
@@ -98,7 +105,12 @@
                     </div> 
               </div>
             </div>
-          </div>       
+          </div> 
+          <div id="dialog" style="display:none">
+            <div>
+            <iframe src="file.pdf"></iframe>
+            </div>
+        </div>       
     <footer><p>DCI 2018</p></footer>
 </body>
 </html>
