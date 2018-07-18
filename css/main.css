@@ -105,7 +105,14 @@ section span {
 aside {
     padding: 0px;
     width: 40%;
+}
 
+section img, aside img {
+    transform: rotate(0deg);
+}
+
+section img:hover, aside img:hover {
+    transform: scaleX(-1);
 }
 
 #bottom {
@@ -255,6 +262,10 @@ input[type=submit]:hover {
     text-decoration: none;
     list-style: circle;
     display: inline;
+}
+
+.pdfFile {
+padding-left: 20%;
 }
 
 @media all and (max-width: 1200px) {
