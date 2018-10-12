@@ -77,7 +77,7 @@
 	content: "\f07a";
 }
 .tabsX>label[for*="4"]:before {
-	content: "\f59e";
+	content: "\<i class="far fa-address-card"></i>";
 }
 /* Изменения стиля переключателей вкладок при наведении */
  
